@@ -89,7 +89,7 @@ public class Main {
 
         // Создаем объект задания
         Task task = new Task();
-        task.setTasksCount(10); // минимум 100 заданий
+        task.setTasksCount(100); // минимум 100 заданий
 
         for (int i = 0; i < task.getTasksCount(); i++) {
             // Случайное основание логарифма от 1 до 10 (исключая 1)
@@ -144,7 +144,7 @@ public class Main {
 
         // Создаем объект задания
         Task task = new Task();
-        task.setTasksCount(10); // минимум 100 заданий
+        task.setTasksCount(100); // минимум 100 заданий
 
         // Создаем потоки
         Thread generatorThread = new Thread(new SimpleGenerator(task));
@@ -174,7 +174,7 @@ public class Main {
 
         // Создаем объект задания
         Task task = new Task();
-        task.setTasksCount(10);
+        task.setTasksCount(100);
 
         // Создаем семафор (1 разрешение = взаимное исключение)
         Semaphore semaphore = new Semaphore(1);
